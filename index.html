@@ -1,66 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Luck Game - Check Your Luck For Fun</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-  <title>Luck Game - Check Your Luck For Fun</title>
-</head>
+  <body>
+    <p class="text-center" id="creator">
+      This game created by
+      <a target="_blank" href="https://twitter.com/raihanahmad01"
+        >Raihan Ahmad</a
+      >
+    </p>
+    <section id="container">
+      <div id="game">
+        <h1 id="title">Check Luck For Fun</h1>
 
-<body>
-  <section id="container">
-    <div id="game">
-      <h1 id="title">Check Luck For Fun</h1>
-      <div id="choose-info">
-        <p>Choose a number between <input id="min" type="number" value="1"> to <input id="max" type="number" value="5">
-          <input type="submit" value="set" id="set-btn">
-        </p>
+        <!-- INFORMATION PARAGRAPH -->
+        <div id="choose-info">
+          <p>
+            Choose a number between
+            <input id="min" type="number" value="1" /> to
+            <input id="max" type="number" value="3" />
+            <input type="submit" value="set" id="set-btn" />
+          </p>
+        </div>
+
+        <!-- LUCK INPUT -->
+        <div id="input-form">
+          <input id="input-fild" type="number" />
+        </div>
+
+        <!-- LEFT VALUE ADN BUTTON -->
+        <div id="btn-div">
+          <div id="left"></div>
+          <input type="submit" id="btn" value="Give a shot" />
+        </div>
+
+        <!-- LODING GIF -->
+        <div id="loading-div">
+          <img src="loading.gif" alt="loading" />
+        </div>
+
+        <!-- MESSAGE AND GIF -->
+        <div id="message-div">
+          <p id="message">Just for check</p>
+          <!-- lose -->
+          <img id="lose-1" class="img" src="lose/1.gif" alt="" />
+          <img id="lose-2" class="img" src="lose/2.gif" alt="" />
+          <img id="lose-3" class="img" src="lose/3.gif" alt="" />
+          <img id="lose-4" class="img" src="lose/4.gif" alt="" />
+          <img id="lose-5" class="img" src="lose/5.gif" alt="" />
+          <img id="lose-6" class="img" src="lose/6.gif" alt="" />
+          <img id="lose-7" class="img" src="lose/7.gif" alt="" />
+          <img id="lose-8" class="img" src="lose/8.gif" alt="" />
+          <img id="lose-9" class="img" src="lose/9.gif" alt="" />
+          <img id="lose-10" class="img" src="lose/10.gif" alt="" />
+          <img id="lose-11" class="img" src="lose/11.gif" alt="" />
+          <img id="lose-12" class="img" src="lose/12.gif" alt="" />
+
+          <!-- win -->
+          <img id="win-1" class="img" src="win/1.gif" alt="" />
+          <img id="win-2" class="img" src="win/2.gif" alt="" />
+          <img id="win-3" class="img" src="win/3.gif" alt="" />
+          <img id="win-4" class="img" src="win/4.gif" alt="" />
+          <img id="win-5" class="img" src="win/5.gif" alt="" />
+          <img id="win-6" class="img" src="win/6.gif" alt="" />
+          <img id="win-7" class="img" src="win/7.gif" alt="" />
+          <img id="win-8" class="img" src="win/8.gif" alt="" />
+          <img id="win-9" class="img" src="win/9.gif" alt="" />
+          <img id="win-10" class="img" src="win/10.gif" alt="" />
+          <img id="win-11" class="img" src="win/11.gif" alt="" />
+          <img id="win-12" class="img" src="win/12.gif" alt="" />
+        </div>
       </div>
-      <div id="input-form">
-        <input id="input-fild" type="number">
-      </div>
-      <div id="btn-div">
-        <div id="left"></div>
-        <input type="submit" id="btn" value="Give a shot">
-      </div>
-      <div id="message-div">
-        <p id="message">Just for check</p>
-        <img id="lose-1" class="img" src="lose/1.gif" alt="">
-        <img id="lose-2" class="img" src="lose/2.gif" alt="">
-        <img id="lose-3" class="img" src="lose/3.gif" alt="">
-        <img id="lose-4" class="img" src="lose/4.gif" alt="">
-        <img id="lose-5" class="img" src="lose/5.gif" alt="">
-        <img id="lose-6" class="img" src="lose/6.gif" alt="">
-        <img id="lose-7" class="img" src="lose/7.gif" alt="">
-        <img id="lose-8" class="img" src="lose/8.gif" alt="">
-        <img id="lose-9" class="img" src="lose/9.gif" alt="">
-        <img id="lose-10" class="img" src="lose/10.gif" alt="">
-        <img id="lose-11" class="img" src="lose/11.gif" alt="">
-        <img id="lose-12" class="img" src="lose/12.gif" alt="">
+    </section>
 
-        <!-- win -->
-        <img id="win-1" class="img" src="win/1.gif" alt="">
-        <img id="win-2" class="img" src="win/2.gif" alt="">
-        <img id="win-3" class="img" src="win/3.gif" alt="">
-        <img id="win-4" class="img" src="win/4.gif" alt="">
-        <img id="win-5" class="img" src="win/5.gif" alt="">
-        <img id="win-6" class="img" src="win/6.gif" alt="">
-        <img id="win-7" class="img" src="win/7.gif" alt="">
-        <img id="win-8" class="img" src="win/8.gif" alt="">
-        <img id="win-9" class="img" src="win/9.gif" alt="">
-        <img id="win-10" class="img" src="win/10.gif" alt="">
-        <img id="win-11" class="img" src="win/11.gif" alt="">
-        <img id="win-12" class="img" src="win/12.gif" alt="">
-
-      </div>
-    </div>
-  </section>
-
-  <!-- INCLUDE JS FILE -->
-  <script src="game.js"></script>
-</body>
-
+    <!-- INCLUDE JS FILE -->
+    <script src="game.js"></script>
+  </body>
 </html>

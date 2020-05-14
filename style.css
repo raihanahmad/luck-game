@@ -10,11 +10,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: #fff;
   font-weight: 700;
+  line-height: 1.6;
 }
 
 /* WORK SECTION */
 #container {
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
   max-width: 900px;
   margin: auto;
   text-align: center;
@@ -77,6 +78,7 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+/* LUCK INPUT FILD */
 #input-fild {
   height: 5rem;
   width: 40%;
@@ -93,7 +95,7 @@ input[type=number] {
 }
 
 
-
+/* LEFT VALUE AND BTN */
 #btn-div {
   display: flex;
   align-items: center;
@@ -136,6 +138,12 @@ input[type=number] {
   background: rgb(102, 158, 11);
 }
 
+/* LADING GIT */
+#loading-div {
+  display: none;
+}
+
+/* MESSAGE AND IMAGE */
 #message-div {
   /* background: rgb(98, 151, 11); */
   /* background-color: rgb(190, 68, 68); */
@@ -159,4 +167,31 @@ input[type=number] {
 
 .img {
   display: none;
+}
+
+/* CREATOR */
+#creator {
+  text-align: center;
+  padding-top: 1rem;
+  font-size: .8rem;
+  font-weight: normal;
+  color: #ddd;
+}
+
+#creator>a {
+  color: #ddd;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#creator>a:hover {
+  border-bottom: 1.5px #ddd solid;
+}
+
+
+/* MEDIA QUERY */
+@media (max-width: 400px) {
+  #title {
+    font-size: 3rem;
+  }
 }
