@@ -52,7 +52,7 @@ luckBtn.addEventListener("click", function (e) {
 
   setTimeout(function () {
     luckCalculation();
-  }, 1000);
+  }, 2000);
 
   e.preventDefault();
 });
@@ -72,7 +72,7 @@ function luckCalculation() {
   let loseImg = `lose-${imgValue}`;
   let winImg = `win-${imgValue}`;
 
-  // HIDE IMAGE 2N TIME IF THER ANY LOSE OR WIN IMAGE
+  // HIDE IMAGE 2N TIME IF THER ARE ANY LOSE OR WIN IMAGE
   document.querySelector(`#${loseImg}`).style.display = "none";
   document.querySelector(`#${winImg}`).style.display = "none";
 
